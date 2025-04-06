@@ -30,7 +30,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		DC063C842D93D844005807D0 /* practice-2025 */ = {
+		711A14062DA220E9002875E6 /* practice-2025 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "practice-2025";
 			sourceTree = "<group>";
@@ -75,7 +75,7 @@
 		DC063C792D93D844005807D0 = {
 			isa = PBXGroup;
 			children = (
-				DC063C842D93D844005807D0 /* practice-2025 */,
+				711A14062DA220E9002875E6 /* practice-2025 */,
 				DC063C962D93D845005807D0 /* practice-2025Tests */,
 				DC063CA02D93D845005807D0 /* practice-2025UITests */,
 				DC063C832D93D844005807D0 /* Products */,
@@ -108,7 +108,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				DC063C842D93D844005807D0 /* practice-2025 */,
+				711A14062DA220E9002875E6 /* practice-2025 */,
 			);
 			name = "practice-2025";
 			packageProductDependencies = (
