@@ -14,31 +14,34 @@ struct ChipModel: Identifiable {
     let systemImage: String
     let titleKey: LocalizedStringKey
 }
-//MARK:  ViewModel
+
+//MARK:  - ViewModel -
 class ChipsViewModel :ObservableObject {
     @Published var chipsArray: [ChipModel] = [
-        ChipModel(isSelected: false, systemImage: "square.and.arrow.up.badge.clock", titleKey: "Today"),
-        ChipModel(isSelected: false, systemImage: "square.and.arrow.up.badge.clock", titleKey: "Yesterday"),
-        ChipModel(isSelected: false, systemImage: "square.and.arrow.up.badge.clock", titleKey: "Last Week"),
-        ChipModel(isSelected: false, systemImage: "square.and.arrow.up.badge.clock", titleKey: "next Week"),
-        ChipModel(isSelected: false, systemImage: "square.and.arrow.up.badge.clock", titleKey: "Today"),
-        ChipModel(isSelected: false, systemImage: "square.and.arrow.up.badge.clock", titleKey: "Yesterday"),
-        ChipModel(isSelected: false, systemImage: "square.and.arrow.up.badge.clock", titleKey: "Last Week"),
-        ChipModel(isSelected: false, systemImage: "square.and.arrow.up.badge.clock", titleKey: "next Week")
+        ChipModel(isSelected: false, systemImage: "checkmark", titleKey: "Today"),
+        ChipModel(isSelected: false, systemImage: "checkmark", titleKey: "Yesterday"),
+        ChipModel(isSelected: false, systemImage: "checkmark", titleKey: "Last Week"),
+        ChipModel(isSelected: false, systemImage: "checkmark", titleKey: "next Week"),
+        ChipModel(isSelected: false, systemImage: "checkmark", titleKey: "Today"),
+        ChipModel(isSelected: false, systemImage: "checkmark", titleKey: "Yesterday"),
+        ChipModel(isSelected: false, systemImage: "checkmark", titleKey: "Last Week"),
+        ChipModel(isSelected: false, systemImage: "checkmark", titleKey: "Next Week")
     ]
 }
-//MARK: ChipのView
+
+//MARK: - ChipのView -
 struct ChipView: View {
     let systemImage : String
     let titleKey : LocalizedStringKey
     @Binding var isSelected: Bool
-
+    
     
     var body: some View {
         HStack{
-            Image.init(systemName: systemImage)
-                .font(.body)
-            
+            if isSelected{
+                Image(systemName: systemImage)
+                    .font(.body)
+            }
             Text(titleKey)
                 .font(.body)
                 .lineLimit(1)
@@ -47,30 +50,29 @@ struct ChipView: View {
         .padding(.vertical, 4)
         .padding(.leading, 4)
         .padding(.trailing, 10)
-        .foregroundColor(isSelected ? .white : .blue)
-        .background(isSelected ? Color.blue : Color.white)
+        .foregroundColor(isSelected ? .white : .pink)
+        .background(isSelected ? Color.pink : Color.white)
         .cornerRadius(20)
         .overlay(
             RoundedRectangle(cornerRadius: 20)
-                .stroke(Color.blue, lineWidth: 1.5)
+                .stroke(Color.pink, lineWidth: 1.5)
         )
         .scaleEffect(isSelected ? 1.1 : 1.0)
-        .shadow(color: isSelected ? Color.blue : Color.clear, radius: 2)
+        .shadow(color: isSelected ? Color.pink : Color.clear, radius: 2)
         .onTapGesture {
             withAnimation(.spring(response: 0.3, dampingFraction: 0.5)){
                 isSelected.toggle()
-
+                
             }
         }
     }
 }
-//MARK: ChipのContainer
+//MARK: - ChipのContainer -
 struct ChipViewContainer: View {
     @ObservedObject var viewModel = ChipsViewModel()
     
     var body : some View {
-        var width = CGFloat.zero
-        var height = CGFloat.zero
+        
         return GeometryReader { geo in
             ScrollView {
                 LazyVGrid(
