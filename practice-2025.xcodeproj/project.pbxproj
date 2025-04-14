@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DC6DB33A2DAA26AC003EDE0C /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = DC6DB3392DAA26AC003EDE0C /* ComposableArchitecture */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		DC063C942D93D845005807D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,12 +33,17 @@
 		DC063C9D2D93D845005807D0 /* practice-2025UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "practice-2025UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		DC063C842D93D844005807D0 /* practice-2025 */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "practice-2025";
-			sourceTree = "<group>";
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		DC6DB35B2DAA4C83003EDE0C /* Exceptions for "practice-2025" folder in "practice-2025" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = DC063C812D93D844005807D0 /* practice-2025 */;
 		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
 		DC063C962D93D845005807D0 /* practice-2025Tests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "practice-2025Tests";
@@ -45,6 +54,14 @@
 			path = "practice-2025UITests";
 			sourceTree = "<group>";
 		};
+		DC2E89022DA8C39C009474E4 /* practice-2025 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				DC6DB35B2DAA4C83003EDE0C /* Exceptions for "practice-2025" folder in "practice-2025" target */,
+			);
+			path = "practice-2025";
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC6DB33A2DAA26AC003EDE0C /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +93,10 @@
 		DC063C792D93D844005807D0 = {
 			isa = PBXGroup;
 			children = (
-				DC063C842D93D844005807D0 /* practice-2025 */,
+				DC2E89022DA8C39C009474E4 /* practice-2025 */,
 				DC063C962D93D845005807D0 /* practice-2025Tests */,
 				DC063CA02D93D845005807D0 /* practice-2025UITests */,
+				DC6DB3382DAA26AC003EDE0C /* Frameworks */,
 				DC063C832D93D844005807D0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +109,13 @@
 				DC063C9D2D93D845005807D0 /* practice-2025UITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		DC6DB3382DAA26AC003EDE0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,10 +134,11 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				DC063C842D93D844005807D0 /* practice-2025 */,
+				DC2E89022DA8C39C009474E4 /* practice-2025 */,
 			);
 			name = "practice-2025";
 			packageProductDependencies = (
+				DC6DB3392DAA26AC003EDE0C /* ComposableArchitecture */,
 			);
 			productName = "practice-2025";
 			productReference = DC063C822D93D844005807D0 /* practice-2025.app */;
@@ -195,6 +222,9 @@
 			);
 			mainGroup = DC063C792D93D844005807D0;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				DC6DB3372DA8F6CF003EDE0C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DC063C832D93D844005807D0 /* Products */;
 			projectDirPath = "";
@@ -394,6 +424,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"practice-2025/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "practice-2025/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -431,6 +462,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"practice-2025/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "practice-2025/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -583,6 +615,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DC6DB3372DA8F6CF003EDE0C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.19.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DC6DB3392DAA26AC003EDE0C /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC6DB3372DA8F6CF003EDE0C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DC063C7A2D93D844005807D0 /* Project object */;
 }
