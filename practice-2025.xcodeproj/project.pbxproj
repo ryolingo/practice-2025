@@ -32,14 +32,12 @@
 		DC063C932D93D845005807D0 /* practice-2025Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "practice-2025Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC063C9D2D93D845005807D0 /* practice-2025UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "practice-2025UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		711A14062DA220E9002875E6 /* practice-2025 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "practice-2025";
+			sourceTree = "<group>";
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		DC6DB35B2DAA4C83003EDE0C /* Exceptions for "practice-2025" folder in "practice-2025" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = DC063C812D93D844005807D0 /* practice-2025 */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -93,7 +91,8 @@
 		DC063C792D93D844005807D0 = {
 			isa = PBXGroup;
 			children = (
-				DC2E89022DA8C39C009474E4 /* practice-2025 */,
+
+				711A14062DA220E9002875E6 /* practice-2025 */,
 				DC063C962D93D845005807D0 /* practice-2025Tests */,
 				DC063CA02D93D845005807D0 /* practice-2025UITests */,
 				DC6DB3382DAA26AC003EDE0C /* Frameworks */,
@@ -134,7 +133,8 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				DC2E89022DA8C39C009474E4 /* practice-2025 */,
+
+				711A14062DA220E9002875E6 /* practice-2025 */,
 			);
 			name = "practice-2025";
 			packageProductDependencies = (
