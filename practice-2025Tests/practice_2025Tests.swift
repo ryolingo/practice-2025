@@ -5,12 +5,19 @@
 //  Created by Ryota Matsumoto on 3/26/25.
 //
 
-import Testing
+import XCTest
+import ComposableArchitecture
+@testable import practice_2025
 
-struct practice_2025Tests {
-
-    @Test func example() async throws {
-        // Write your test here and use APIs like `#expect(...)` to check expected conditions.
+final class AppFeatureTests: XCTestCase {
+    @MainActor
+    func testIncrementInFirstTab() async {
+        let store = TestStore(initialState: AppFeature.State()) {
+            AppFeature()
+        }
+        
+        await store.send(.tab1(.incrementButtonTapped)) {
+            $0.tab1.count = 1
+        }
     }
-
 }
