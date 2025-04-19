@@ -22,11 +22,3 @@ struct practice_2025App: App {
     }
 }
 
-//@main practice_2025App: App {
-//    var body : some Scene {
-//        WindowGroup {
-//            ContentView()
-//
-//        }
-//    }
-//}
