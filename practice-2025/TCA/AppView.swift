@@ -27,3 +27,8 @@ let store: StoreOf<AppFeature>
   }
 }
 
+#Preview{
+    AppView(
+        store: Store()
+    )
+}
