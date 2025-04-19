@@ -6,13 +6,20 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
-struct AddContacysView: View {
+struct AddContactView: View {
+    @Bindable var store: StoreOf<AddContactFeature>
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Form{
+            TextField("Name", text: $store.contact.name.sending(\.setName))
+        }
     }
 }
 
 #Preview {
-    AddContacysView()
+    AddContactView(
+        store: Store
+    )
 }
+    

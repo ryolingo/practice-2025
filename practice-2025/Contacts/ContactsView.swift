@@ -34,5 +34,17 @@ struct ContactsView: View {
 }
 
 #Preview {
-    ContactsView(store: .init(initialState: <#T##Reducer.State#>, reducer: <#T##() -> Reducer#>))
+    ContactsView(
+        store: Store(
+            initialState: ContactsFeature.State(
+                contacts: [
+                    Contact(id: UUID(), name: "Jhon"),
+                    Contact(id: UUID(), name: "Mike"),
+                    Contact(id: UUID(), name: "Sara")
+                ]
+            )
+        ) {
+            ContactsFeature()
+        }
+    )
 }

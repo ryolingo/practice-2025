@@ -29,8 +29,9 @@ struct ContactsFeature {
             switch action {
             case .addButtonTapped:
                 //TODO: handle add button tapped
+                return.none
+
             }
-            return.none
         }
     }
 }

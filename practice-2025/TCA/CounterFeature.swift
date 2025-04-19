@@ -84,11 +84,11 @@ struct CounterFeature: Equatable {
 }
 
 struct CounterView : View {
-   fileprivate let tcatcaStore: tcaStoreOf<CounterFeature>
+    let store: StoreOf<CounterFeature>
     
     var body : some View {
         VStack {
-            Text("\(tcaStore.count)")
+            Text("\(store.count)")
                 .font(.largeTitle)
                 .padding()
                 .background(Color.black.opacity(0.1))
@@ -96,7 +96,7 @@ struct CounterView : View {
         }
         HStack{
             Button("-"){
-                tcaStore.send(.decrementButtonTapped)
+                store.send(.decrementButtonTapped)
             }
             .font(.largeTitle)
             .padding()
@@ -104,7 +104,7 @@ struct CounterView : View {
             .cornerRadius(10)
             
             Button("+"){
-                tcaStore.send(.incrementButtonTapped)
+                store.send(.incrementButtonTapped)
             }
             .font(.largeTitle)
             .padding()
@@ -112,23 +112,23 @@ struct CounterView : View {
             .cornerRadius(10)
             
             Button("Fact"){
-                tcaStore.send(.factButtonTapped)
+                store.send(.factButtonTapped)
             }
             .font(.largeTitle)
             .padding()
             .background(Color.black.opacity(0.1))
             .cornerRadius(10)
         }
-        if tcaStore.isLoading{
+        if store.isLoading{
             ProgressView()
-        } else if let fact = tcaStore.fact {
+        } else if let fact = store.fact {
             Text(fact)
                 .font( .largeTitle)
                 .multilineTextAlignment(.center)
                 .padding()
         }
-        Button(tcaStore.isTimerRunning ? "Stop Timer" : "Start Timer"){
-            tcaStore.send(.toggleTimerButtonTapped)
+        Button(store.isTimerRunning ? "Stop Timer" : "Start Timer"){
+            store.send(.toggleTimerButtonTapped)
         }
         .font(.largeTitle)
         .padding()
@@ -139,7 +139,7 @@ struct CounterView : View {
 
 #Preview{
     CounterView(
-        tcaStore: tcaStore(initialState: CounterFeature.State()){
+        store: Store(initialState: CounterFeature.State()){
             CounterFeature()
         }
     )
@@ -151,7 +151,7 @@ struct CounterView : View {
 //
 //@main
 //struct practice_2025App: App {
-//    static let tcaStore = tcaStore(initialState: CounterFeature.State()){
+//    static let store = store(initialState: CounterFeature.State()){
 //        CounterFeature()
 //        //これは状態の変化をコンソールで表示してくれるもの
 //        //変化がない場合は何も起きない
@@ -159,7 +159,7 @@ struct CounterView : View {
 //    }
 //   var body: some Scene {
 //        WindowGroup {
-//            CounterView(tcaStore: practice_2025App.tcaStore)
+//            CounterView(store: practice_2025App.store)
 //        }
 //    }
 //}

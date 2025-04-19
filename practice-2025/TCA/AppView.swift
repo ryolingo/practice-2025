@@ -10,16 +10,16 @@ import SwiftUI
 
 struct AppView: View {
 
-fileprivate let tcaStore: tcaStoreOf<AppFeature>
+ let store: StoreOf<AppFeature>
   
   var body: some View {
     TabView {
-        CounterView(tcaStore: tcaStore.scope(state: \.tab1, action: \.tab1))
+        CounterView(store: store.scope(state: \.tab1, action: \.tab1))
         .tabItem {
           Text("Counter 1")
         }
       
-        CounterView(tcaStore: tcaStore.scope(state: \.tab2, action: \.tab2))
+        CounterView(store: store.scope(state: \.tab2, action: \.tab2))
         .tabItem {
           Text("Counter 2")
         }
@@ -29,7 +29,7 @@ fileprivate let tcaStore: tcaStoreOf<AppFeature>
 
 #Preview{
     AppView(
-        tcaStore: tcaStore(initialState: AppFeature.State()){
+        store: Store(initialState: AppFeature.State()){
             AppFeature()
         }
     )
