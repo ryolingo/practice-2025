@@ -25,7 +25,7 @@ struct ContactsFeature {
         case addButtonTapped
         case addContact(PresentationAction<AddContactFeature.Action>)
     }
-    
+    //TODO: 複数のプレゼンテーションをやる
     var body : some ReducerOf<Self>{
         Reduce { state, action in
             switch action {
