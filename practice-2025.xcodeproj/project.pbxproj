@@ -26,6 +26,7 @@
 		DC6B460A2DB39B0A00EAE94F /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B46092DB39B0A00EAE94F /* ContactsView.swift */; };
 		DC6B460C2DB3A29300EAE94F /* AddContactFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B460B2DB3A29200EAE94F /* AddContactFeature.swift */; };
 		DC6B460E2DB3A4AD00EAE94F /* AddContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B460D2DB3A4AD00EAE94F /* AddContactView.swift */; };
+		DC6B46162DB5EF6400EAE94F /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B46152DB5EF6100EAE94F /* Test.swift */; };
 		DC6DB33A2DAA26AC003EDE0C /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = DC6DB3392DAA26AC003EDE0C /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +79,7 @@
 		DC6B46092DB39B0A00EAE94F /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 		DC6B460B2DB3A29200EAE94F /* AddContactFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactFeature.swift; sourceTree = "<group>"; };
 		DC6B460D2DB3A4AD00EAE94F /* AddContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactView.swift; sourceTree = "<group>"; };
+		DC6B46152DB5EF6100EAE94F /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		DCC682A32DACF85500AA78CC /* AppFeatureTEsts.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppFeatureTEsts.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -221,6 +223,7 @@
 		DC6B45F62DB397CB00EAE94F /* practice-2025 */ = {
 			isa = PBXGroup;
 			children = (
+				DC6B46152DB5EF6100EAE94F /* Test.swift */,
 				DC6B46052DB397D200EAE94F /* Contacts */,
 				DC6B45E22DB397CB00EAE94F /* Chip */,
 				DC6B45E52DB397CB00EAE94F /* LoopingCards */,
@@ -446,6 +449,7 @@
 				DC6B45FC2DB397CB00EAE94F /* AppView.swift in Sources */,
 				DC6B45FD2DB397CB00EAE94F /* CounterFeature.swift in Sources */,
 				DC6B45FE2DB397CB00EAE94F /* TextRenderer.swift in Sources */,
+				DC6B46162DB5EF6400EAE94F /* Test.swift in Sources */,
 				DC6B45FF2DB397CB00EAE94F /* ContentView.swift in Sources */,
 				DC6B46002DB397CB00EAE94F /* DragCircleDate.swift in Sources */,
 				DC6B46012DB397CB00EAE94F /* practice_2025App.swift in Sources */,
