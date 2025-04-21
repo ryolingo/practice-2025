@@ -23,28 +23,25 @@ struct AddContactFeature{
         }
     }
     @Dependency(\.dismiss) var dismiss
-    var body : some ReducerOf<Self> {
-        Reduce { state, action in
-            switch action {
-            case .cancelButtonTapped:
-                return .run { _ in await self.dismiss()}
-                
-            case .delegate:
-                return .send(.delegate(.cancel))
-            
-                
-            case .saveButtonTapped:
-                return
-                    .run {[contact = state.contact] send in
-                        await send(.delegate(.saveContact(contact)))
-                        await self . dismiss()
-                    }
-                
-            case let .setName(name):
-                state.contact.name = name
-                return .none
-            }
+    var body: some ReducerOf<Self> {
+      Reduce { state, action in
+        switch action {
+        case .cancelButtonTapped:
+          return .run { _ in await self.dismiss() }
+          
+        case .delegate:
+          return .none
+          
+        case .saveButtonTapped:
+          return .run { [contact = state.contact] send in
+            await send(.delegate(.saveContact(contact)))
+            await self.dismiss()
+          }
+          
+        case let .setName(name):
+          state.contact.name = name
+          return .none
         }
+      }
     }
-}
-
+  }
