@@ -9,24 +9,16 @@ import SwiftUI
 
 @main
 struct practice_2025App: App {
-    static let store = Store(initialState: CounterFeature.State()){
-        CounterFeature()
+    static let store = Store(initialState: ContactsFeature.State()){
+        ContactsFeature()
         //これは状態の変化をコンソールで表示してくれるもの
         //変化がない場合は何も起きない
             ._printChanges()
     }
    var body: some Scene {
         WindowGroup {
-            CounterView(store: practice_2025App.store)
+            ContactsView(store: practice_2025App.store)
         }
     }
 }
 
-//@main practice_2025App: App {
-//    var body : some Scene {
-//        WindowGroup {
-//            ContentView()
-//
-//        }
-//    }
-//}

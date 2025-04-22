@@ -10,7 +10,7 @@ import SwiftUI
 
 struct AppView: View {
 
-let store: StoreOf<AppFeature>
+ let store: StoreOf<AppFeature>
   
   var body: some View {
     TabView {
@@ -27,3 +27,10 @@ let store: StoreOf<AppFeature>
   }
 }
 
+#Preview{
+    AppView(
+        store: Store(initialState: AppFeature.State()){
+            AppFeature()
+        }
+    )
+}

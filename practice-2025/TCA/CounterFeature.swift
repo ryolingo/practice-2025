@@ -151,7 +151,7 @@ struct CounterView : View {
 //
 //@main
 //struct practice_2025App: App {
-//    static let store = Store(initialState: CounterFeature.State()){
+//    static let store = store(initialState: CounterFeature.State()){
 //        CounterFeature()
 //        //これは状態の変化をコンソールで表示してくれるもの
 //        //変化がない場合は何も起きない
