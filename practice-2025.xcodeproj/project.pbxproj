@@ -27,6 +27,7 @@
 		DC6B460C2DB3A29300EAE94F /* AddContactFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B460B2DB3A29200EAE94F /* AddContactFeature.swift */; };
 		DC6B460E2DB3A4AD00EAE94F /* AddContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B460D2DB3A4AD00EAE94F /* AddContactView.swift */; };
 		DC6B46162DB5EF6400EAE94F /* statusLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B46152DB5EF6100EAE94F /* statusLabel.swift */; };
+		DC6B46672DB746B200EAE94F /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B46662DB746B200EAE94F /* Badge.swift */; };
 		DC6DB33A2DAA26AC003EDE0C /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = DC6DB3392DAA26AC003EDE0C /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +81,7 @@
 		DC6B460B2DB3A29200EAE94F /* AddContactFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactFeature.swift; sourceTree = "<group>"; };
 		DC6B460D2DB3A4AD00EAE94F /* AddContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactView.swift; sourceTree = "<group>"; };
 		DC6B46152DB5EF6100EAE94F /* statusLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = statusLabel.swift; sourceTree = "<group>"; };
+		DC6B46662DB746B200EAE94F /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
 		DCC682A32DACF85500AA78CC /* AppFeatureTEsts.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppFeatureTEsts.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -237,6 +239,7 @@
 				DC6B45F32DB397CB00EAE94F /* Info.plist */,
 				DC6B45F42DB397CB00EAE94F /* practice_2025.entitlements */,
 				DC6B45F52DB397CB00EAE94F /* practice_2025App.swift */,
+				DC6B46652DB7465E00EAE94F /* Badge */,
 			);
 			path = "practice-2025";
 			sourceTree = "<group>";
@@ -258,6 +261,14 @@
 				DC6B46152DB5EF6100EAE94F /* statusLabel.swift */,
 			);
 			path = Status;
+			sourceTree = "<group>";
+		};
+		DC6B46652DB7465E00EAE94F /* Badge */ = {
+			isa = PBXGroup;
+			children = (
+				DC6B46662DB746B200EAE94F /* Badge.swift */,
+			);
+			path = Badge;
 			sourceTree = "<group>";
 		};
 		DC6DB3382DAA26AC003EDE0C /* Frameworks */ = {
@@ -457,6 +468,7 @@
 				DC6B45FC2DB397CB00EAE94F /* AppView.swift in Sources */,
 				DC6B45FD2DB397CB00EAE94F /* CounterFeature.swift in Sources */,
 				DC6B45FE2DB397CB00EAE94F /* TextRenderer.swift in Sources */,
+				DC6B46672DB746B200EAE94F /* Badge.swift in Sources */,
 				DC6B46162DB5EF6400EAE94F /* statusLabel.swift in Sources */,
 				DC6B45FF2DB397CB00EAE94F /* ContentView.swift in Sources */,
 				DC6B46002DB397CB00EAE94F /* DragCircleDate.swift in Sources */,
