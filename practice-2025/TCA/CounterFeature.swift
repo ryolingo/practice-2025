@@ -82,7 +82,7 @@ struct CounterFeature: Equatable {
         }
     }
 }
-
+    
 struct CounterView : View {
     let store: StoreOf<CounterFeature>
     
