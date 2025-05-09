@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC578A082DC2256F008BD79A /* BorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC578A072DC2256F008BD79A /* BorderView.swift */; };
+		DC578A252DC9DAFA008BD79A /* init.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC578A242DC9DAFA008BD79A /* init.swift */; };
+		DC578A642DCE011F008BD79A /* HorizontalScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC578A632DCE011F008BD79A /* HorizontalScrollView.swift */; };
 		DC6B45DD2DB364AB00EAE94F /* closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B45DC2DB364AB00EAE94F /* closure.swift */; };
 		DC6B45DF2DB36FBA00EAE94F /* singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B45DE2DB36FB600EAE94F /* singleton.swift */; };
 		DC6B45F72DB397CB00EAE94F /* Chip_Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B45E02DB397CB00EAE94F /* Chip_Api.swift */; };
@@ -28,6 +31,9 @@
 		DC6B460E2DB3A4AD00EAE94F /* AddContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B460D2DB3A4AD00EAE94F /* AddContactView.swift */; };
 		DC6B46162DB5EF6400EAE94F /* statusLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B46152DB5EF6100EAE94F /* statusLabel.swift */; };
 		DC6B46672DB746B200EAE94F /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B46662DB746B200EAE94F /* Badge.swift */; };
+		DC6B46692DB8F51600EAE94F /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B46682DB8F51600EAE94F /* CloseButton.swift */; };
+		DC6B466B2DB9057900EAE94F /* MyTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B466A2DB9057900EAE94F /* MyTagView.swift */; };
+		DC6B466D2DB90B0E00EAE94F /* fashion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC6B466C2DB90B0E00EAE94F /* fashion.jpg */; };
 		DC6DB33A2DAA26AC003EDE0C /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = DC6DB3392DAA26AC003EDE0C /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +65,9 @@
 		DC063C822D93D844005807D0 /* practice-2025.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "practice-2025.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC063C932D93D845005807D0 /* practice-2025Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "practice-2025Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC063C9D2D93D845005807D0 /* practice-2025UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "practice-2025UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC578A072DC2256F008BD79A /* BorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderView.swift; sourceTree = "<group>"; };
+		DC578A242DC9DAFA008BD79A /* init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = init.swift; sourceTree = "<group>"; };
+		DC578A632DCE011F008BD79A /* HorizontalScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScrollView.swift; sourceTree = "<group>"; };
 		DC6B45DC2DB364AB00EAE94F /* closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = closure.swift; sourceTree = "<group>"; };
 		DC6B45DE2DB36FB600EAE94F /* singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = singleton.swift; sourceTree = "<group>"; };
 		DC6B45E02DB397CB00EAE94F /* Chip_Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chip_Api.swift; sourceTree = "<group>"; };
@@ -82,6 +91,9 @@
 		DC6B460D2DB3A4AD00EAE94F /* AddContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactView.swift; sourceTree = "<group>"; };
 		DC6B46152DB5EF6100EAE94F /* statusLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = statusLabel.swift; sourceTree = "<group>"; };
 		DC6B46662DB746B200EAE94F /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
+		DC6B46682DB8F51600EAE94F /* CloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseButton.swift; sourceTree = "<group>"; };
+		DC6B466A2DB9057900EAE94F /* MyTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTagView.swift; sourceTree = "<group>"; };
+		DC6B466C2DB90B0E00EAE94F /* fashion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fashion.jpg; sourceTree = "<group>"; };
 		DCC682A32DACF85500AA78CC /* AppFeatureTEsts.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppFeatureTEsts.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -154,11 +166,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		DC578A622DCE0109008BD79A /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				DC578A632DCE011F008BD79A /* HorizontalScrollView.swift */,
+			);
+			path = ScrollView;
+			sourceTree = "<group>";
+		};
 		DC6B45DB2DB3648500EAE94F /* SwiftFunc */ = {
 			isa = PBXGroup;
 			children = (
 				DC6B45DE2DB36FB600EAE94F /* singleton.swift */,
 				DC6B45DC2DB364AB00EAE94F /* closure.swift */,
+				DC578A242DC9DAFA008BD79A /* init.swift */,
 			);
 			path = SwiftFunc;
 			sourceTree = "<group>";
@@ -217,6 +238,7 @@
 		DC6B45EF2DB397CB00EAE94F /* Text */ = {
 			isa = PBXGroup;
 			children = (
+				DC6B466C2DB90B0E00EAE94F /* fashion.jpg */,
 				DC6B45EE2DB397CB00EAE94F /* TextRenderer.swift */,
 			);
 			path = Text;
@@ -225,6 +247,7 @@
 		DC6B45F62DB397CB00EAE94F /* practice-2025 */ = {
 			isa = PBXGroup;
 			children = (
+				DC578A622DCE0109008BD79A /* ScrollView */,
 				DC6B46252DB743AD00EAE94F /* Status */,
 				DC6B46052DB397D200EAE94F /* Contacts */,
 				DC6B45E22DB397CB00EAE94F /* Chip */,
@@ -240,6 +263,7 @@
 				DC6B45F42DB397CB00EAE94F /* practice_2025.entitlements */,
 				DC6B45F52DB397CB00EAE94F /* practice_2025App.swift */,
 				DC6B46652DB7465E00EAE94F /* Badge */,
+				DC6B466A2DB9057900EAE94F /* MyTagView.swift */,
 			);
 			path = "practice-2025";
 			sourceTree = "<group>";
@@ -267,6 +291,8 @@
 			isa = PBXGroup;
 			children = (
 				DC6B46662DB746B200EAE94F /* Badge.swift */,
+				DC6B46682DB8F51600EAE94F /* CloseButton.swift */,
+				DC578A072DC2256F008BD79A /* BorderView.swift */,
 			);
 			path = Badge;
 			sourceTree = "<group>";
@@ -426,6 +452,7 @@
 			files = (
 				DC6B46022DB397CB00EAE94F /* Preview Assets.xcassets in Resources */,
 				DC6B46032DB397CB00EAE94F /* Assets.xcassets in Resources */,
+				DC6B466D2DB90B0E00EAE94F /* fashion.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,15 +485,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC6B45F72DB397CB00EAE94F /* Chip_Api.swift in Sources */,
+				DC578A642DCE011F008BD79A /* HorizontalScrollView.swift in Sources */,
+				DC578A252DC9DAFA008BD79A /* init.swift in Sources */,
 				DC6B460E2DB3A4AD00EAE94F /* AddContactView.swift in Sources */,
 				DC6B45F82DB397CB00EAE94F /* Chip_LazyVgrid.swift in Sources */,
 				DC6B45F92DB397CB00EAE94F /* LoopingStack.swift in Sources */,
 				DC6B460C2DB3A29300EAE94F /* AddContactFeature.swift in Sources */,
 				DC6B460A2DB39B0A00EAE94F /* ContactsView.swift in Sources */,
+				DC578A082DC2256F008BD79A /* BorderView.swift in Sources */,
 				DC6B45FA2DB397CB00EAE94F /* PeoleView.swift in Sources */,
 				DC6B45FB2DB397CB00EAE94F /* AppFeature.swift in Sources */,
 				DC6B45FC2DB397CB00EAE94F /* AppView.swift in Sources */,
+				DC6B466B2DB9057900EAE94F /* MyTagView.swift in Sources */,
 				DC6B45FD2DB397CB00EAE94F /* CounterFeature.swift in Sources */,
+				DC6B46692DB8F51600EAE94F /* CloseButton.swift in Sources */,
 				DC6B45FE2DB397CB00EAE94F /* TextRenderer.swift in Sources */,
 				DC6B46672DB746B200EAE94F /* Badge.swift in Sources */,
 				DC6B46162DB5EF6400EAE94F /* statusLabel.swift in Sources */,
