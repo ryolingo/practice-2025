@@ -10,6 +10,7 @@
 		DC578A082DC2256F008BD79A /* BorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC578A072DC2256F008BD79A /* BorderView.swift */; };
 		DC578A252DC9DAFA008BD79A /* init.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC578A242DC9DAFA008BD79A /* init.swift */; };
 		DC578A642DCE011F008BD79A /* HorizontalScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC578A632DCE011F008BD79A /* HorizontalScrollView.swift */; };
+		DC578AC02DD304DB008BD79A /* ViewModifire.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC578ABF2DD304DB008BD79A /* ViewModifire.swift */; };
 		DC6B45DD2DB364AB00EAE94F /* closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B45DC2DB364AB00EAE94F /* closure.swift */; };
 		DC6B45DF2DB36FBA00EAE94F /* singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B45DE2DB36FB600EAE94F /* singleton.swift */; };
 		DC6B45F72DB397CB00EAE94F /* Chip_Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B45E02DB397CB00EAE94F /* Chip_Api.swift */; };
@@ -68,6 +69,7 @@
 		DC578A072DC2256F008BD79A /* BorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderView.swift; sourceTree = "<group>"; };
 		DC578A242DC9DAFA008BD79A /* init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = init.swift; sourceTree = "<group>"; };
 		DC578A632DCE011F008BD79A /* HorizontalScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScrollView.swift; sourceTree = "<group>"; };
+		DC578ABF2DD304DB008BD79A /* ViewModifire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifire.swift; sourceTree = "<group>"; };
 		DC6B45DC2DB364AB00EAE94F /* closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = closure.swift; sourceTree = "<group>"; };
 		DC6B45DE2DB36FB600EAE94F /* singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = singleton.swift; sourceTree = "<group>"; };
 		DC6B45E02DB397CB00EAE94F /* Chip_Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chip_Api.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				DC578A632DCE011F008BD79A /* HorizontalScrollView.swift */,
+				DC578ABF2DD304DB008BD79A /* ViewModifire.swift */,
 			);
 			path = ScrollView;
 			sourceTree = "<group>";
@@ -497,6 +500,7 @@
 				DC6B45FB2DB397CB00EAE94F /* AppFeature.swift in Sources */,
 				DC6B45FC2DB397CB00EAE94F /* AppView.swift in Sources */,
 				DC6B466B2DB9057900EAE94F /* MyTagView.swift in Sources */,
+				DC578AC02DD304DB008BD79A /* ViewModifire.swift in Sources */,
 				DC6B45FD2DB397CB00EAE94F /* CounterFeature.swift in Sources */,
 				DC6B46692DB8F51600EAE94F /* CloseButton.swift in Sources */,
 				DC6B45FE2DB397CB00EAE94F /* TextRenderer.swift in Sources */,
