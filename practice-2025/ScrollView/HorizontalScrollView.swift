@@ -21,17 +21,14 @@ struct HorizontalScrollView: View {
 }
 
 struct HorizontalItemView: View {
-    let color: Color = Color(
-        red: .random(in: 0...1),
-        green: .random(in: 0...1),
-        blue: .random(in: 0...1)
-    )
-
     var body : some View {
         VStack{
-            RoundedRectangle(cornerRadius: 20)
-            .fill(color)
-            .frame(width: 80, height: 80)
+            Button{
+                print("Pressed")
+            }  label: {
+                RoundedRectangle(cornerRadius: 20)
+                .frame(width: 100, height: 100)
+            }
         }
     }
 }
@@ -40,3 +37,5 @@ struct HorizontalItemView: View {
     HorizontalScrollView()
 }
 
+	
+    
